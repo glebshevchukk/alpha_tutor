@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.app{
+  padding-right:5vw;
+}
+
+table {
+  border: 0px solid black;
+  border-radius:0px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #001699;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-shadow: 2px 2px black;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 5vw;
+  text-align: center;
+}
+
+.category-container {
+  height: 100%;
+  padding-right:10vw;
+}
+
+.category-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100%;
+  background-color: #001699;
+  float: left;
+}
+
+
+
+.category-box .category {
+  font-family: "Swiss921", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-left: 100;
+}
+
+td.category-title {
+  font-family: "Swiss921", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+td.board-clue {
+  font-family: "Swiss921", sans-serif;
+  font-size: 30px;
+  height: 5vh;
+  color: #c99f57;
+}
+
+.clue {
+}
+
+.clue-display {
+  background-color: #001699;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Korinna", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 100%;
+  min-height: 60vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.final-category {
+  font-family: "Swiss921", sans-serif;
+  font-size: 90px;
+  font-weight: normal;
+}
+
+.daily-double {
+  font-size: 90px;
+}
+
+.clue-category-label {
+  color: white;
+  font-family: "Korinna", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+.code {
+  font-family: "Consolas", "Fira Code", monospace;
+  text-transform: none;
+}
+
+.code-lines {
+  list-style-type: none;
+  font-family: "Consolas", "Fira Code", monospace;
+  text-transform: none;
+  text-align: left;
+}

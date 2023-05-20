@@ -5,9 +5,162 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.info-column{
+  background: transparent;
+  color: #FFFDFA;
+}
+
+.earth-column{
+  background: transparent;
+}
+
+.all-columns{
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);;
+
+}
+
+.navbar{
+  background: transparent;
+
+}
+
+
+.navbar-item{
+  color: #FFFDFA;
+}
+
+.title{
+  color: #FFFDFA;
+}
+
+.subtitle{
+  color: #FFFDFA;
+}
+
+
+.column{
+  padding:0
+}
+
+.cs-main-container{
+  height:100vh;
+  width:70vh;
+  background: transparent;
+  border:none;
+  padding-top:10vh;
+  padding-left:10vh;
+  padding-bottom:10vh;
+}
+
+.hero-body{
+  margin:0;
+  padding:0;
+}
+
+.cs-message-list{
+  background:transparent;
+}
+
+.data-cs-message-list{
+  background:transparent;
+}
+
+.cs-chat-container{
+  background:transparent;
+}
+
+.cs-chat-container .cs-message-input{
+  background: transparent;
+  border:none;
+}
+
+
+.cs-message-input__content-editor-container{
+  background-color: #FFFDFA;
+}
+
+.cs-message-input__content-editor{
+  background-color: #FFFDFA;
+}
+
+.cs-message-input__content-editor-wrapper{
+  background-color: #FFFDFA;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cs-message__content{
+  color:#000011;
+  background-color: #FFFDFA;
+  border-radius:30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cs-message--outgoing .cs-message__content{
+  color:#000011;
+  background-color: #aad0ff;
+  border-radius:30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.jeopordy{
+  padding-left:10vw;
+  height:80vh;
+  width:40vw;
+  background: #000011;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.video{
+  height:40vh;
+  width:40vw;
+  background: #000011;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.video_elem{
+  height:100%;
+  width:80%;
+}
+
+.mermaid{
+  height:100vh;
+}
+
+svg{
+  height:100vh;
+}
+
+g{
+  height:100vh;
+}
+
+.opener-body{
+  width:100vw;
+}
+
+.topic-input{
+  background:transparent;
+  color: #FFFDFA;
+  width:20vw;
+}
+
+#root {
+  height:110vh;
+}
+
+.loader{
+  width:10px;
+  height:10px;
 }

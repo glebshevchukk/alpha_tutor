@@ -1,17 +1,54 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Root from "./routes/root";
+import Opener from "./routes/opener";
+import Chat from "./routes/chat";
+import Tree from "./routes/tree"
+import Jeopordy from "./routes/jeopordy/components/Jeopordy.tsx"
+import Video from "./routes/video";
+import Loading from "./routes/loading";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <Opener/>
+  },
+  {
+    path:"/loading",
+    element: <Loading/>
+  },
+  {
+    path: "/combo",
+    element: <Root />,
+    children: [
+      {
+        path: "tree_page",
+        element: <Tree/>,
+      },
+      {
+        path: "chat_page",
+        element: <Chat/>,
+      },
+      {
+        path: "jeopordy_page",
+        element: <Jeopordy/>,
+      },
+      {
+        path: "video_page",
+        element: <Video/>,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+
+    <RouterProvider router={router} />
+
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,70 @@
+
+
+Topic generation API call to /generate_topic:
+
+MESSAGE:
+{
+‘topic’:’TEST_TOPIC’
+}
+
+RESPONSE:
+{
+    'topic': 'birds',
+    'subcategories': ["CATEGORY1","CATEGORY2","CATEGORY3"],
+    'summary': "SUMMARY_OF_TOPIC",
+    'mermaid_graph': "MERMAID GRAPH OF THE GIVEN TOPIC"
+}
+
+
+Message reply API call that generates messsage to /respond:
+
+MESSAGE:
+{
+    'message':'TEST_USER_MESSAGE'
+    'topic':'TEST_TOPIC',
+    'subcategories': [CATEGORY1,CATEGORY2,CATEGORY3],
+    'summary': "SUMMARY_OF_TOPIC",
+    'all_prev_messages':[MESSAGE1,MESSAGE2,MESSAGE3],
+}
+
+RESPONSE:
+{
+    'message':'TEST_MESSAGE_REPLY',
+    'mermaid_html':"ACTIVE_MERMAID_ELEMENT FROM ABOVE"
+}
+
+
+Message reply API call that generates video to /respond:
+
+MESSAGE:
+{
+    'message':'TEST_USER_MESSAGE'
+    'topic':'TEST_TOPIC',
+    'subcategories': [CATEGORY1,CATEGORY2,CATEGORY3],
+    'summary': "SUMMARY_OF_TOPIC",
+    'all_prev_messages':[MESSAGE1,MESSAGE2,MESSAGE3]
+}
+
+RESPONSE:
+{
+    'message':'TEST_MESSAGE_REPLY [video]',
+    'url':'URL_TO_YOUTUBE_VIDEO'
+}
+
+
+Message reply API call that generates jeopordy game to /respond:
+
+MESSAGE:
+{
+    'message':'TEST_USER_MESSAGE'
+    'topic':'TEST_TOPIC',
+    'subcategories': [CATEGORY1,CATEGORY2,CATEGORY3],
+    'summary': "SUMMARY_OF_TOPIC",
+    'all_prev_messages':[MESSAGE1,MESSAGE2,MESSAGE3]
+}
+
+RESPONSE:
+{
+    'message':'[jeopordy]',
+    'jeopordy_json':{"FULL JEOPORDY JSON IN CORRECT FORMAT"}
+}
